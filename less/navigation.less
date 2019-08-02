@@ -7,7 +7,17 @@
     padding: 2% 22.5%;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 0;
+    }
     .title {
+
+        @media @mobile {
+            padding-bottom: 3%;
+        }
         
         a {
             color: @font-color;
@@ -20,6 +30,11 @@
         display: flex;
         justify-content: space-between;
         font-size: 1.6rem;
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
 
         .nav-links {
             
